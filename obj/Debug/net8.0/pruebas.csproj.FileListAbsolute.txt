@@ -1,0 +1,15 @@
+/Users/luissanchez/Desktop/pruebas/bin/Debug/net8.0/pruebas
+/Users/luissanchez/Desktop/pruebas/bin/Debug/net8.0/pruebas.deps.json
+/Users/luissanchez/Desktop/pruebas/bin/Debug/net8.0/pruebas.runtimeconfig.json
+/Users/luissanchez/Desktop/pruebas/bin/Debug/net8.0/pruebas.dll
+/Users/luissanchez/Desktop/pruebas/bin/Debug/net8.0/pruebas.pdb
+/Users/luissanchez/Desktop/pruebas/obj/Debug/net8.0/pruebas.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luissanchez/Desktop/pruebas/obj/Debug/net8.0/pruebas.AssemblyInfoInputs.cache
+/Users/luissanchez/Desktop/pruebas/obj/Debug/net8.0/pruebas.AssemblyInfo.cs
+/Users/luissanchez/Desktop/pruebas/obj/Debug/net8.0/pruebas.csproj.CoreCompileInputs.cache
+/Users/luissanchez/Desktop/pruebas/obj/Debug/net8.0/pruebas.sourcelink.json
+/Users/luissanchez/Desktop/pruebas/obj/Debug/net8.0/pruebas.dll
+/Users/luissanchez/Desktop/pruebas/obj/Debug/net8.0/refint/pruebas.dll
+/Users/luissanchez/Desktop/pruebas/obj/Debug/net8.0/pruebas.pdb
+/Users/luissanchez/Desktop/pruebas/obj/Debug/net8.0/pruebas.genruntimeconfig.cache
+/Users/luissanchez/Desktop/pruebas/obj/Debug/net8.0/ref/pruebas.dll
