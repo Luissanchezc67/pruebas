@@ -19,6 +19,10 @@ namespace CSharpHelloWorld
             Console.WriteLine(myInt - 1);
             Console.WriteLine(myInt);
 
+            bool myBool = true;
+            myBool = false;
+            Console.WriteLine(myBool);
+
             double myDouble = 6.5;
             Console.WriteLine(myDouble);
 
@@ -28,8 +32,13 @@ namespace CSharpHelloWorld
             Console.WriteLine(myInt + myDouble + myFloat);
 
             dynamic myDynamic = 6;
-            myDynamic = "Ahora soy una cadena de texto";
+            myDynamic = "Ahora soy dinamico ";
             Console.WriteLine(myDynamic);
+
+            var myVar = "Hola, soy una variable var";
+            Console.WriteLine(myVar);
+
+            Console.WriteLine($"Presiona cualquier {myInt} tecla para continuar... {myBool}");
         }
     }
 }
