@@ -1,2 +1,2 @@
 #bases de datos
-#prueb PROYECTO TO DO LIST
+#prueb PROYECTOS DE PRACTICAS 
