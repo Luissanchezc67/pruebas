@@ -1,5 +1,6 @@
 
 using Microsoft.EntityFrameworkCore;
+using Clinica.Api.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,8 +12,8 @@ builder.Services.AddSwaggerGen();
 
 //EF core
 
-var cs = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<AppDbContext>(options => options.UseMySqlServer(cs));
+var cs = builder.Configuration.GetConnectionString("Default");
+builder.Services.AddDbContext<AppDbContext>(opt => opt.UseMySqlServer(cs));
 
 var app = builder.Build();
 
@@ -24,6 +25,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.MapControllers();
+app.Run();
 
 var summaries = new[]
 {
