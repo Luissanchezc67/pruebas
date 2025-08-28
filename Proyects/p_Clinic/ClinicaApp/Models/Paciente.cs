@@ -1,4 +1,5 @@
-public class Paciente
+namespace ClinicaApp.Models
+{public class Paciente
 {
     public int IdPaciente { get; set; }
     public string Nombre { get; set; } = null!;
@@ -13,4 +14,4 @@ public class Paciente
     // Relaciones
     public ICollection<Cita> Citas { get; set; } = null!;
     
-}
+}}

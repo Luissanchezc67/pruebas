@@ -1,4 +1,5 @@
-public class Doctor
+namespace ClinicaApp.Models{
+    public class Doctor
 {
     public int IdDoctor { get; set; }
     public string Nombre { get; set; } = null!;
@@ -8,4 +9,5 @@ public class Doctor
 
     // Relaciones
     public ICollection<Cita> Citas { get; set; } = null!;
+}
 }
