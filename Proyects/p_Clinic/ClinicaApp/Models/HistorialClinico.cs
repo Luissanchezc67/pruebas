@@ -2,9 +2,9 @@ namespace ClinicaApp.Models
 {
 public class HistorialClinico
 {
-    public int IdHistorial { get; set; }
-    public int IdPaciente { get; set; }
-    public int IdDoctor { get; set; }
+    public int HistorialClinicoId { get; set; }
+    public int PacienteId { get; set; }
+    public int DoctorId { get; set; }
     public string Diagnostico { get; set; } = null!;
     public string Estado { get; set; } = null!;
     public DateTime FechaCreacion { get; set; }

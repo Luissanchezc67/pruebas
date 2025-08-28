@@ -1,7 +1,7 @@
 namespace ClinicaApp.Models{
     public class Doctor
 {
-    public int IdDoctor { get; set; }
+    public int DoctorId { get; set; }
     public string Nombre { get; set; } = null!;
     public string Especialidad { get; set; } = null!;
     public string Telefono { get; set; } = null!;

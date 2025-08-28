@@ -1,7 +1,7 @@
 namespace ClinicaApp.Models
 {public class Pago
 {
-    public int IdPago { get; set; }
+    public int PagoId { get; set; }
     public int IdPaciente { get; set; }
     public Paciente Paciente { get; set; } = null!;
     public decimal Monto { get; set; }
