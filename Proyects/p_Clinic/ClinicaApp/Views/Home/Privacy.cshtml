@@ -1,6 +1,38 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Panel de Navegación";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="container mt-4">
+    <h1 class="mb-4">Panel de Navegación</h1>
+    <p>Desde aquí puedes acceder a todas las secciones del sistema:</p>
+
+    <div class="list-group">
+        <a asp-controller="Pacientes" asp-action="Index" class="list-group-item list-group-item-action">
+            👤 Gestión de Pacientes
+        </a>
+
+        <a asp-controller="Doctores" asp-action="Index" class="list-group-item list-group-item-action">
+            🩺 Gestión de Doctores
+        </a>
+
+        <a asp-controller="Citas" asp-action="Index" class="list-group-item list-group-item-action">
+            📅 Gestión de Citas
+        </a>
+
+        <a asp-controller="Servicios" asp-action="Index" class="list-group-item list-group-item-action">
+            🧾 Servicios
+        </a>
+
+        <a asp-controller="Pagos" asp-action="Index" class="list-group-item list-group-item-action">
+            💳 Pagos
+        </a>
+
+        <a asp-controller="Historiales" asp-action="Index" class="list-group-item list-group-item-action">
+            📋 Historial Clínico
+        </a>
+
+        <a asp-controller="Usuarios" asp-action="Index" class="list-group-item list-group-item-action">
+            🔑 Usuarios
+        </a>
+    </div>
+</div>
