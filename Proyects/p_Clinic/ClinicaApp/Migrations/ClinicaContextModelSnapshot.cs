@@ -170,9 +170,6 @@ namespace ClinicaApp.Migrations
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("IdPaciente")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("MetodoPago")
                         .IsRequired()
                         .HasColumnType("TEXT");

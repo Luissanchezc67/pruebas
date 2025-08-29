@@ -13,8 +13,8 @@ namespace ClinicaApp.Models
         public int DoctorId { get; set; }
 
         // Relaciones
-        public Paciente Paciente { get; set; } = null!;
-        public Doctor Doctor { get; set; } = null!;
+        public Paciente? Paciente { get; set; } = null!;
+        public Doctor? Doctor { get; set; } = null!;
        
     }
 }

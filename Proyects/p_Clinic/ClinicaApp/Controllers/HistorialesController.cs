@@ -48,8 +48,8 @@ namespace ClinicaApp.Controllers
         // GET: Historiales/Create
         public IActionResult Create()
         {
-            ViewData["DoctorId"] = new SelectList(_context.Doctores, "DoctorId", "DoctorId");
-            ViewData["PacienteId"] = new SelectList(_context.Pacientes, "PacienteId", "PacienteId");
+            ViewData["DoctorId"] = new SelectList(_context.Doctores, "DoctorId", "Nombre");
+            ViewData["PacienteId"] = new SelectList(_context.Pacientes, "PacienteId", "Nombre");
             return View();
         }
 
@@ -66,8 +66,8 @@ namespace ClinicaApp.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DoctorId"] = new SelectList(_context.Doctores, "DoctorId", "DoctorId", historialClinico.DoctorId);
-            ViewData["PacienteId"] = new SelectList(_context.Pacientes, "PacienteId", "PacienteId", historialClinico.PacienteId);
+            ViewData["DoctorId"] = new SelectList(_context.Doctores, "DoctorId", "Nombre", historialClinico.DoctorId);
+            ViewData["PacienteId"] = new SelectList(_context.Pacientes, "PacienteId", "Nombre", historialClinico.PacienteId);
             return View(historialClinico);
         }
 
@@ -84,8 +84,8 @@ namespace ClinicaApp.Controllers
             {
                 return NotFound();
             }
-            ViewData["DoctorId"] = new SelectList(_context.Doctores, "DoctorId", "DoctorId", historialClinico.DoctorId);
-            ViewData["PacienteId"] = new SelectList(_context.Pacientes, "PacienteId", "PacienteId", historialClinico.PacienteId);
+            ViewData["DoctorId"] = new SelectList(_context.Doctores, "DoctorId", "Nombre", historialClinico.DoctorId);
+            ViewData["PacienteId"] = new SelectList(_context.Pacientes, "PacienteId", "Nombre", historialClinico.PacienteId);
             return View(historialClinico);
         }
 
@@ -121,8 +121,8 @@ namespace ClinicaApp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DoctorId"] = new SelectList(_context.Doctores, "DoctorId", "DoctorId", historialClinico.DoctorId);
-            ViewData["PacienteId"] = new SelectList(_context.Pacientes, "PacienteId", "PacienteId", historialClinico.PacienteId);
+            ViewData["DoctorId"] = new SelectList(_context.Doctores, "DoctorId", "Nombre", historialClinico.DoctorId);
+            ViewData["PacienteId"] = new SelectList(_context.Pacientes, "PacienteId", "Nombre", historialClinico.PacienteId);
             return View(historialClinico);
         }
 
