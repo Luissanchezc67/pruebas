@@ -11,7 +11,8 @@ namespace ClinicaApp.Models
     public string Antecedentes { get; set; } = null!;
     public string Estado { get; set; } = null!;
 
-    // Relaciones
-    public ICollection<Cita> Citas { get; set; } = null!;
+        // Relaciones
+   
+    public ICollection<Cita> Citas { get; set; } = new List<Cita>();
     
 }}

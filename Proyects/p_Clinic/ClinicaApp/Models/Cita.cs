@@ -9,11 +9,12 @@ namespace ClinicaApp.Models
         public string Motivo { get; set; } = null!;
 
         // Claves foráneas
-        public int PacienteId { get; set; }
+        public int PacienteId { get; set; } 
         public int DoctorId { get; set; }
 
         // Relaciones
-        public Paciente Paciente { get; set; } = null!;
-        public Doctor Doctor { get; set; } = null!;
+        public Paciente Paciente { get; set; } = new List<Paciente>();
+        public Doctor Doctor { get; set; } = new List<Doctor>();
+       
     }
 }
