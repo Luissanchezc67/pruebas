@@ -8,5 +8,5 @@ namespace ClinicaApp.Models
     public string Estado { get; set; } = null!;
 
     // Relaciones
-    public ICollection<Cita> Citas { get; set; } = null!;
+    public ICollection<Cita> Citas { get; set; } = new List<Cita>();
 }}
