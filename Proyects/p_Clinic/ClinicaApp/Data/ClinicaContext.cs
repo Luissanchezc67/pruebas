@@ -13,4 +13,8 @@ public class ClinicaContext : DbContext
     public DbSet<Servicio> Servicios { get; set; } = null!;
     public DbSet<Pago> Pagos { get; set; } = null!;
     public DbSet<HistorialClinico> Historiales { get; set; } = null!;
+
+    public DbSet<User> Users { get; set; } = null!;
+
+public DbSet<ClinicaApp.Models.User> User { get; set; } = default!;
 }
