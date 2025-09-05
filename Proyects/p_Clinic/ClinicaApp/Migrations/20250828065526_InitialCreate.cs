@@ -112,8 +112,7 @@ namespace ClinicaApp.Migrations
                 {
                     PagoId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    IdPaciente = table.Column<int>(type: "INTEGER", nullable: false),
-                    PacienteId = table.Column<int>(type: "INTEGER", nullable: false),
+                   PacienteId = table.Column<int>(type: "INTEGER", nullable: false),
                     Monto = table.Column<decimal>(type: "TEXT", nullable: false),
                     Fecha = table.Column<DateTime>(type: "TEXT", nullable: false),
                     MetodoPago = table.Column<string>(type: "TEXT", nullable: false),

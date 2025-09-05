@@ -45,6 +45,7 @@ namespace ClinicaApp.Controllers
         // GET: Pagos/Create
         public IActionResult Create()
         {
+            ViewData["PacienteId"] = new SelectList(_context.Pacientes, "PacienteId", "Nombre");
             return View();
         }
 
@@ -61,6 +62,8 @@ namespace ClinicaApp.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewData["PacienteId"] = new SelectList(_context.Pacientes, "PacienteId", "Nombre");
             return View(pago);
         }
 
@@ -77,6 +80,7 @@ namespace ClinicaApp.Controllers
             {
                 return NotFound();
             }
+            ViewData["PacienteId"] = new SelectList(_context.Pacientes, "PacienteId", "Nombre");
             return View(pago);
         }
 
@@ -112,6 +116,8 @@ namespace ClinicaApp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewData["PacienteId"] = new SelectList(_context.Pacientes, "PacienteId", "Nombre");
             return View(pago);
         }
 
@@ -129,7 +135,6 @@ namespace ClinicaApp.Controllers
             {
                 return NotFound();
             }
-
             return View(pago);
         }
 
